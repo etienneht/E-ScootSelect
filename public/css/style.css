@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Orbitron";
   src: url("./fonts/Orbitron-VariableFont_wght.ttf");
@@ -272,6 +273,153 @@ h1, h2, h3 {
 }
 .official-link:hover {
   background: #ff2626;
+}
+
+.simulator {
+  padding: 40px 0;
+  color: #fff;
+}
+
+/* Conteneur central – style similaire à tes cards */
+.simulator-box {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.32);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 80, 0, 0.35);
+  backdrop-filter: blur(4px);
+}
+
+/* Titre */
+.simulator-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #ff6a3b; /* même orangé que ton thème */
+}
+
+/* FORMULAIRE */
+.simu-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Labels */
+.simu-form label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* Inputs */
+.simu-form input .simu-form select {
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 80, 0, 0.25);
+  color: #fff;
+}
+
+/* Placeholder */
+.simu-form input::placeholder {
+  color: #ccc;
+}
+
+/* Bouton */
+.simulate {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 80, 0, 0.8);
+  color: #fff;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.simulate:hover {
+  background: rgb(255, 80, 0);
+}
+
+/* Resultats */
+.results {
+  margin: 20px auto;
+  text-align: center;
+  margin-top: 25px;
+  padding: 20px;
+  width: 50%;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 80, 0, 0.25);
+}
+
+/* --- LAYOUT 2 COLONNES POUR LE FORMULAIRE --- */
+.simu-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 18px;
+  margin-bottom: 15px;
+}
+
+/* Chaque label + input dans son bloc */
+.simu-form label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Inputs */
+.simu-form input, .simu-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 80, 0, 0.25);
+  color: #fff;
+}
+
+/* Champ "mode de conduite" prend toute la largeur */
+.simu-form select {
+  grid-column: span 2;
+}
+
+/* DISCLAIMER JAUNE / ORANGE COMME AVANT */
+.disclaimer {
+  display: block;
+  text-align: center;
+  grid-column: span 2;
+  margin-top: -20px;
+  margin-left: 655px;
+  background: rgba(255, 200, 0, 0.15);
+  padding: 8px 10px;
+  width: 35%;
+  border-left: 3px solid #ffc107;
+  color: #ffca2c;
+  border-radius: 6px;
+  font-size: 0.7rem;
+}
+
+/* BOUTON — centré et même style */
+.simulate {
+  display: block;
+  text-align: center;
+  margin: 15px auto;
+  grid-column: span 2;
+  margin-top: 10px;
+  width: 10%;
+}
+
+/* RESPONSIVE — sur petit écran, repasse en colonne unique */
+@media (max-width: 650px) {
+  .simu-form {
+    grid-template-columns: 1fr;
+  }
+  .disclaimer,
+  .simulate,
+  .simu-form select {
+    grid-column: span 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

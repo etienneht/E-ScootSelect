@@ -1,6 +1,4 @@
-<?php
-require_once __DIR__ . "/../nav.php";
-?>
+
     
     <section class="comparator">
         <h2>🔻Comparateur de trottinettes</h2>
