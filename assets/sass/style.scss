@@ -179,7 +179,7 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
     width: 400px;
-    height: 565px;
+    height: 580px;
     margin-left: 30px;
     padding: 15px;
     background: rgba(255, 255, 255, 0.03);
@@ -278,7 +278,6 @@ h1, h2, h3 {
     color: #fff;
 }
 
-/* Conteneur central – style similaire à tes cards */
 .simulator-box {
     max-width: 600px;
     margin: 0 auto;
@@ -289,28 +288,26 @@ h1, h2, h3 {
     backdrop-filter: blur(4px);
 }
 
-/* Titre */
 .simulator-box h2 {
     text-align: center;
     margin-bottom: 20px;
     font-weight: 700;
-    color: #ff6a3b; /* même orangé que ton thème */
+    color: #ff6a3b; 
 }
 
-/* FORMULAIRE */
 .simu-form {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-/* Labels */
+
 .simu-form label {
     font-weight: 600;
     margin-bottom: 4px;
 }
 
-/* Inputs */
+
 .simu-form input .simu-form select {
     padding: 10px;
     border-radius: 8px;
@@ -319,12 +316,12 @@ h1, h2, h3 {
     color: #fff;
 }
 
-/* Placeholder */
+
 .simu-form input::placeholder {
     color: #ccc;
 }
 
-/* Bouton */
+
 .simulate {
     margin-top: 10px;
     width: 100%;
@@ -341,7 +338,7 @@ h1, h2, h3 {
     background: rgba(255, 80, 0, 1);
 }
 
-/* Resultats */
+
 .results {
     margin: 20px auto;
     text-align: center;
@@ -353,7 +350,7 @@ h1, h2, h3 {
     border: 1px solid rgba(255,80,0,0.25);
 }
 
-/* --- LAYOUT 2 COLONNES POUR LE FORMULAIRE --- */
+
 .simu-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -361,13 +358,13 @@ h1, h2, h3 {
     margin-bottom: 15px;
 }
 
-/* Chaque label + input dans son bloc */
+
 .simu-form label {
     display: block;
     margin-bottom: 6px;
 }
 
-/* Inputs */
+
 .simu-form input, .simu-form select {
     width: 100%;
     padding: 10px;
@@ -377,12 +374,12 @@ h1, h2, h3 {
     color: #fff;
 }
 
-/* Champ "mode de conduite" prend toute la largeur */
+
 .simu-form select {
     grid-column: span 2;
 }
 
-/* DISCLAIMER JAUNE / ORANGE COMME AVANT */
+
 .disclaimer {
     display: block;
     text-align: center;
@@ -398,7 +395,7 @@ h1, h2, h3 {
     font-size: 0.7rem;
 }
 
-/* BOUTON — centré et même style */
+
 .simulate {
     display: block;
     text-align: center;
@@ -408,16 +405,6 @@ h1, h2, h3 {
     width: 10%;
 }
 
-/* RESPONSIVE — sur petit écran, repasse en colonne unique */
-@media (max-width: 650px) {
-    .simu-form {
-        grid-template-columns: 1fr;
-    }
-    .disclaimer,
-    .simulate,
-    .simu-form select {
-        grid-column: span 1;
-    }
-}
+
 
 

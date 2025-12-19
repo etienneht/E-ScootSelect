@@ -6,8 +6,6 @@
  */
 require_once __DIR__ . '/config.php';
 
-//function head_with_title($title = ""){
-//}
 ?>
 
 <!DOCTYPE html>

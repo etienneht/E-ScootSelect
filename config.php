@@ -1,6 +1,13 @@
 <?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 define('ROOT', __DIR__ . '/');
 
+function isUserLoggedIn(): bool {
+    return isset($_SESSION['username']);
+}
 
 //Fonction qui charge un fichier
 
@@ -19,7 +26,7 @@ function start_page(string $title)
 
 function getPDO()
 {
-    $pdo = new PDO('mysql:host=localhost; dbname=escootselect; charset=utf8mb4', 'root', '1234');
+    $pdo = new PDO('mysql:host=db; dbname=escootselect; charset=utf8mb4', 'root', '1234');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     return $pdo;
 };

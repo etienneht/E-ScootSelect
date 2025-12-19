@@ -27,6 +27,7 @@
                 <li><a href="/E-ScootSelect/simulator/simulator.php">Simulateur</a></li>
                 <li><a href="/E-ScootSelect/views/users/users_registration_form.php">Inscription</a></li>
                 <li><a href="/E-ScootSelect/views/users/users_login_form.php">Connexion</a></li>
+                <li><a href="#"></a>Profil</li>
             </ul>
         </nav>
 

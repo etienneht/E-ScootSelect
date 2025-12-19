@@ -9,19 +9,19 @@ start_page("Simulateur");
         <h2 class="text-center mb-4">🔻Simulateur de performances</h2>
         <form class="simu-form">
         
-        <div class="input-group mb-3">
+        <div class="input-group mb-4">
             <label>Poids de l'utilisateur (kg)</label>
             <input type="number" placeholder="Ex : 75" min="40" max="200" required>
         </div>
-        <div class="input-group mb-3">
+        <div class="input-group mb-4">
             <label>Capacité de la batterie (Ah)</label>
             <input type="number" id="battery" placeholder="Ex : 35" min="5" max="100" required>
         </div>
-        <div class="input-group mb-3">
+        <div class="input-group mb-4">
             <label>Puissance moteur totale (W)</label>
             <input type="number" id="power" placeholder="Ex ; 2 x 3000" value="6000" required>
         </div>
-        <div class="input-group mb-3">
+        <div class="input-group mb-4">
             <label>Mode de conduite</label>
             <select id="mode">
                 <option value="bride">Bridé (vitesse limitée)</option>

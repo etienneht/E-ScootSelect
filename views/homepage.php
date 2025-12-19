@@ -11,19 +11,19 @@
 
                     <div class="carousel-item active">
                         <div class="carousel-img-wrapper">
-                            <img src="public/images/t107pro/09.webp" alt="Halo Knight T107 Pro 1">
+                            <img src="public/images/t107pro/09.webp" alt="Halo Knight T107 Pro image 1">
                         </div>
                     </div>
 
                     <div class="carousel-item">
                         <div class="carousel-img-wrapper">
-                            <img src="public/images/t107pro/public.avif" alt="Halo Knight T107 Pro 2">
+                            <img src="public/images/t107pro/public.avif" alt="Halo Knight T107 Pro image 2">
                         </div>
                     </div>
 
                     <div class="carousel-item">
                         <div class="carousel-img-wrapper">
-                            <img src="public/images/t107pro/08.webp" alt="Halo Knight T107 Pro 3">
+                            <img src="public/images/t107pro/08.webp" alt="Halo Knight T107 Pro image 3">
                         </div>
                     </div>
 
@@ -50,8 +50,11 @@
                     <li><strong>➛ Poids :</strong> 49 kg</li>
                 </ul>
 
-                <a href="#" class="official-link">Voir le site officiel</a>
+                <a href="https://www.haloknights.com/fr-eu/products/halo-knight-t107pro-electric-scooter" class="official-link">Voir sur le site officiel</a>
             </div>
+        </div>
+
+        
         </div>
 
     </section>
